@@ -1,0 +1,45 @@
+@import "index.css";
+.notification{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150,150,180,0.3);
+}
+.notification .text_box{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notification .text_box .print_btn{
+    padding: 15px 20px;
+    background-color: #aaf;
+    margin-top: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.notification .text_box .print_btn:active{
+    background-color: #99e;
+}
+.notification .text_box textarea{
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: darkblue dashed 1px ;
+    letter-spacing: 1px;
+}
+.notification .text_box textarea:focus{
+    outline:none
+}

@@ -1,0 +1,51 @@
+@keyframes jump {
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+.backBtn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 80px;
+    width: 100px;
+    background-color: #a8c;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.load{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(120,120,120,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.load p{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    animation: jump 3s  infinite alternate both ease-in-out;
+}
+
+.onLoad{
+    background-color: gray !important;
+    cursor: wait !important;
+}

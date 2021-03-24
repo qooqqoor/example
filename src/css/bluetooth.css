@@ -1,0 +1,88 @@
+@import "index.css";
+
+
+.bluetooth{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bluetooth .btn:active{
+    background-color: #caf;
+}
+
+.bluetooth  .action_btn{
+    padding: 15px 30px;
+    background-color: #fdc;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(100,100,100,0.3);
+}
+
+.bluetooth .action_btn:active{
+    background-color: #789;
+}
+.bluetooth  .cut_btn{
+    padding: 10px 15px;
+    background-color: #F99;
+    border-radius: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px rgba(100,100,100,0.3);
+}
+
+.bluetooth .cut_btn:active{
+    background-color: #955;
+}
+
+.bluetooth .text_box{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bluetooth .text_box .print_btn{
+    padding: 15px 20px;
+    background-color: #aaf;
+    margin-top: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bluetooth .text_box .print_btn:active{
+    background-color: #99e;
+}
+.bluetooth .text_box textarea{
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: darkblue dashed 1px ;
+    letter-spacing: 1px;
+}
+.bluetooth .text_box textarea:focus{
+    outline:none
+}
+.bluetooth .print_btn:hover,.bluetooth .cut_btn:hover,.bluetooth .btn:hover,.bluetooth .action_btn:hover{
+    filter: brightness(1.1);
+}
